@@ -56,7 +56,7 @@ params:
             src: img/avatar.jpeg
 
     article:
-        math: false
+        math: true
         toc: true
         readingTime: true
         license:
