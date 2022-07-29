@@ -6,15 +6,15 @@
     HUGO_THEME = "repo"
 
 [context.production]
-    command = 'hugo --theme=theme --baseUrl="https://kirklin.cn/"'
+    command = 'hugo --theme=theme --baseUrl="https://kirklin.netlify.app/"'
     [context.production.environment]
         HUGO_ENV = "production"
 
 [context.branch-deploy]
-    command = 'hugo --theme=theme --baseUrl="https://kirklin.cn/"'
+    command = 'hugo --theme=theme --baseUrl="https://kirklin.netlify.app/"'
 
 [context.deploy-preview]
-    command = 'hugo --theme=theme --baseUrl="https://kirklin.cn/"'
+    command = 'hugo --theme=theme --baseUrl="https://kirklin.netlify.app/"'
 
 [[plugins]]
     package = "netlify-plugin-hugo-cache-resources"
