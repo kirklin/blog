@@ -1,7 +1,7 @@
 ---
 title: Welcome to my blog! 
 description: I am Kirk Lin!
-date: 2022-07-29
+date: 2021-01-01
 image: intro.jpg
 
 ---
