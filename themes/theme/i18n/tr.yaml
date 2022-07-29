@@ -1,0 +1,55 @@
+toggleMenu:
+    other: Menüyü Gizle
+
+darkMode:
+    other: Koyu Mod
+
+list:
+    page:
+        one: "{{ .Count }} makale"
+        other: "{{ .Count }} makale"
+
+    section:
+        other: Bölüm
+
+    subsection:
+        one: Alt bölüm
+        other: Alt bölümler
+
+article:
+    relatedContent:
+        other: Alakalı içerikler
+    lastUpdatedOn:
+        other: Son güncelleme
+
+notFound:
+    title:
+        other: Bulunamadı
+    subtitle:
+        other: Aradığınız sayfa mevcut değil.
+
+widget:
+    archives:
+        title:
+            other: Arşiv
+        more:
+            other: Daha fazla
+    tagCloud:
+        title:
+            other: Etiketler
+
+search:
+    title:
+        other: Arama
+    placeholder:
+        other: Birşeyler yazın...
+    resultTitle:
+        other: "#PAGES_COUNT sayfa (#TIME_SECONDS saniye)"
+
+footer:
+    builtWith:
+        other: Copyright © 2019-2023 <a href="https://kirklin.cn" target="_blank" rel="noopener">Kirk Lin</a> All Rights Reserved. <a href="https://kirklin.cn" target="_blank" rel="noopener">Kirk Lin</a> 版权所有
+
+    designedBy:
+        other: <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">闽ICP备2021016459号-1</a>
+

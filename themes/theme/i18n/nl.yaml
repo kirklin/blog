@@ -1,0 +1,59 @@
+toggleMenu:
+    other: Open Menu
+
+darkMode:
+    other: Donkere modus
+
+list:
+    page:
+        one: "{{ .Count }} pagina"
+        other: "{{ .Count }} pagina's"
+
+    section:
+        other: Sectie
+
+    subsection:
+        one: Subsectie
+        other: Subsecties
+
+article:
+    relatedContent:
+        other: Gerelateerde inhoud
+    lastUpdatedOn:
+        other: Laatst bijgewerkt op
+
+notFound:
+    title:
+        other: Niet gevonden
+    subtitle:
+        other: Deze pagina bestaat niet.
+
+widget:
+    archives:
+        title:
+            other: Archief
+        more:
+            other: Meer
+    tagCloud:
+        title:
+            other: Tags
+
+    categoriesCloud:
+        title:
+            other: Categorie
+
+search:
+    title:
+        other: Zoeken
+    placeholder:
+        other: Typ iets
+    resultTitle:
+        other: "#PAGES_COUNT pagina's (#TIME_SECONDS seconden)"
+
+footer:
+    builtWith:
+        other: Copyright © 2019-2023 <a href="https://kirklin.cn" target="_blank" rel="noopener">Kirk Lin</a> All Rights Reserved. <a href="https://kirklin.cn" target="_blank" rel="noopener">Kirk Lin</a> 版权所有
+
+    designedBy:
+        other: <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">闽ICP备2021016459号-1</a>
+

@@ -1,0 +1,74 @@
+toggleMenu:
+    other: Toggle Menu
+
+darkMode:
+    other: Mode fosc
+
+list:
+    page:
+        one: "{{ .Count }} pàgina"
+        other: "{{ .Count }} pàgines"
+
+    section:
+        other: Secció
+
+    subsection:
+        one: Subsecció
+        other: Subseccions
+
+article:
+    back:
+        other: Tornar
+
+    tableOfContents:
+        other: Taula de contingut
+
+    relatedContent:
+        other: Continguts relacionats
+
+    lastUpdatedOn:
+        other: Última vegada actualitzat
+
+    readingTime:
+        one: "{{ .Count }} minut a llegir"
+        other: "{{ .Count }} minuts a llegir"
+
+notFound:
+    title:
+        other: No Trobat
+
+    subtitle:
+        other: Aquesta pàgina no existeix
+
+widget:
+    archives:
+        title:
+            other: Arxiu
+
+        more:
+            other: Més
+
+    tagCloud:
+        title:
+            other: Etiquetes
+    categoriesCloud:
+        title:
+            other: Categories
+
+search:
+    title:
+        other: Cerca
+
+    placeholder:
+        other: Tecleja alguna cosa...
+
+    resultTitle:
+        other: "#PAGES_COUNT pàgines en (#TIME_SECONDS segons)"
+
+footer:
+    builtWith:
+        other: Copyright © 2019-2023 <a href="https://kirklin.cn" target="_blank" rel="noopener">Kirk Lin</a> All Rights Reserved. <a href="https://kirklin.cn" target="_blank" rel="noopener">Kirk Lin</a> 版权所有
+
+    designedBy:
+        other: <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">闽ICP备2021016459号-1</a>
+

@@ -1,0 +1,75 @@
+toggleMenu:
+    other: 切換選單
+
+darkMode:
+    other: 深色模式
+
+list:
+    page:
+        one: "第 {{ .Count }} 頁"
+        other: "第 {{ .Count }} 頁"
+
+    section:
+        other: Section
+
+    subsection:
+        one: Subsection
+        other: Subsections
+
+article:
+    back:
+        other: 返回
+
+    tableOfContents:
+        other: 目錄
+
+    relatedContent:
+        other: 相關內容
+
+    lastUpdatedOn:
+        other: 上次改過於
+
+    readingTime:
+        one: "需要 {{ .Count }} 分鐘閱讀"
+        other: "需要 {{ .Count }} 分鐘閱讀"
+
+notFound:
+    title:
+        other: Not Found
+
+    subtitle:
+        other: 頁面不存在
+
+widget:
+    archives:
+        title:
+            other: Archives
+
+        more:
+            other: 更多
+
+    tagCloud:
+        title:
+            other: Tags
+    categoriesCloud:
+        title:
+            other: Categories
+
+search:
+    title:
+        other: 搜尋
+
+    placeholder:
+        other: Type 關鍵字...
+
+    resultTitle:
+        other: "#PAGES_COUNT pages (#TIME_SECONDS seconds)"
+
+footer:
+    builtWith:
+        other: Copyright © 2019-2023 <a href="https://kirklin.cn" target="_blank" rel="noopener">Kirk Lin</a> All Rights Reserved. <a href="https://kirklin.cn" target="_blank" rel="noopener">Kirk Lin</a> 版权所有
+
+    designedBy:
+        other: <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">闽ICP备2021016459号-1</a>
+
+       

@@ -1,0 +1,62 @@
+toggleMenu:
+    other: 切换菜单
+
+darkMode:
+    other: 暗色模式
+
+article:
+    back:
+        other: 返回
+
+    tableOfContents:
+        other: 目录
+
+    relatedContent:
+        other: 相关文章
+
+    lastUpdatedOn:
+        other: 最后更新于
+
+    readingTime:
+        other: "阅读时长: {{ .Count }} 分钟"
+
+notFound:
+    title:
+        other: 404 错误
+    subtitle:
+        other: 页面不存在
+
+widget:
+    archives:
+        title:
+            other: 归档
+
+        more:
+            other: 更多
+
+    tagCloud:
+        title:
+            other: 标签云
+
+    categoriesCloud:
+        title:
+            other: 分类
+
+search:
+    title:
+        other: 搜索
+
+    placeholder:
+        other: 输入关键词...
+
+    resultTitle:
+        other: "#PAGES_COUNT 个结果 （用时 #TIME_SECONDS 秒）"
+
+footer:
+    builtWith:
+        other: Copyright © 2019-2023 <a href="https://kirklin.cn" target="_blank" rel="noopener">Kirk Lin</a> All Rights Reserved. <a href="https://kirklin.cn" target="_blank" rel="noopener">Kirk Lin</a> 版权所有
+
+    designedBy:
+        other: <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">闽ICP备2021016459号-1</a>
+
+        

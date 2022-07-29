@@ -1,0 +1,72 @@
+toggleMenu:
+    other: Показати меню
+
+darkMode:
+    other: Темна тема
+
+list:
+    page:
+        one: "{{ .Count }} сторінка"
+        few: "{{ .Count }} сторінки"
+        other: "{{ .Count }} сторінок"
+
+    section:
+        other: Секція
+
+    subsection:
+        one: Підсекція
+        other: Підсекції
+
+article:
+    back:
+        other: Назад
+
+    tableOfContents:
+        other: Зміст
+
+    relatedContent:
+        other: Схожі матеріали
+
+    lastUpdatedOn:
+        other: Востаннє оновлено
+
+    readingTime:
+        one: "Час читання: {{ .Count }} хв"
+        other: "Час читання: {{ .Count }} хв"
+
+notFound:
+    title:
+        other: Не знайдено
+
+    subtitle:
+        other: Ця сторінка не існує
+
+widget:
+    archives:
+        title:
+            other: Архіви
+
+        more:
+            other: Більше
+
+    tagCloud:
+        title:
+            other: Теґи
+
+search:
+    title:
+        other: Пошук
+
+    placeholder:
+        other: Напишіть що-небудь...
+
+    resultTitle:
+        other: "#PAGES_COUNT сторінок (#TIME_SECONDS секунд)"
+
+footer:
+    builtWith:
+        other: Copyright © 2019-2023 <a href="https://kirklin.cn" target="_blank" rel="noopener">Kirk Lin</a> All Rights Reserved. <a href="https://kirklin.cn" target="_blank" rel="noopener">Kirk Lin</a> 版权所有
+
+    designedBy:
+        other: <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">闽ICP备2021016459号-1</a>
+

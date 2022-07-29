@@ -1,0 +1,24 @@
+name = "theme"
+license = "GPL-3.0-only"
+licenselink = ""
+description = "Hugo theme"
+homepage = ""
+demosite = ""
+
+tags = ["blog", "responsive", "clean", "light", "dark", "personal"]
+
+features = [
+    "disqus",
+    "photoswipe",
+    "opengraph",
+    "widgets",
+    "darkmode",
+    "table of contents",
+    "search",
+]
+
+min_version = "0.87.0"
+
+[author]
+name = "Kirk Lin"
+homepage = "https://kirklin.cn"

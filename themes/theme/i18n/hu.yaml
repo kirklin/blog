@@ -1,0 +1,74 @@
+toggleMenu:
+    other: Menü Kapcsolása
+
+darkMode:
+    other: Sötét Mód
+
+list:
+    page:
+        one: "{{ .Count }} oldal"
+        other: "{{ .Count }} oldalak"
+
+    section:
+        other: Szekció
+
+    subsection:
+        one: Alszekció
+        other: Alszekciók
+
+article:
+    back:
+        other: Vissza
+
+    tableOfContents:
+        other: Tartalomjegyzék
+
+    relatedContent:
+        other: Kapcsolódó tartalom
+
+    lastUpdatedOn:
+        other: Utolsó frissítés időpontja
+
+    readingTime:
+        one: "{{ .Count }} percnyi olvasmány"
+        other: "{{ .Count }} percnyi olvasmány"
+
+notFound:
+    title:
+        other: Nem található
+
+    subtitle:
+        other: Ez az oldal nem létezik
+
+widget:
+    archives:
+        title:
+            other: Archívum
+
+        more:
+            other: Több
+
+    tagCloud:
+        title:
+            other: Cimkék
+    categoriesCloud:
+        title:
+            other: Kategóriák
+
+search:
+    title:
+        other: Keresés
+
+    placeholder:
+        other: Írj valamit...
+
+    resultTitle:
+        other: "#PAGES_COUNT oldal (#TIME_SECONDS másodperc alatt)"
+
+footer:
+    builtWith:
+        other: Copyright © 2019-2023 <a href="https://kirklin.cn" target="_blank" rel="noopener">Kirk Lin</a> All Rights Reserved. <a href="https://kirklin.cn" target="_blank" rel="noopener">Kirk Lin</a> 版权所有
+
+    designedBy:
+        other: <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">闽ICP备2021016459号-1</a>
+

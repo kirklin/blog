@@ -1,0 +1,75 @@
+toggleMenu:
+    other: Menü umschalten
+
+darkMode:
+    other: Dunkler Modus
+
+list:
+    page:
+        one: "{{ .Count }} Seite"
+        other: "{{ .Count }} Seiten"
+
+    section:
+        other: Abschnitt
+
+    subsection:
+        one: Unterabschnitt
+        other: Unterabschnitte
+
+article:
+    back:
+        other: Zurück
+
+    tableOfContents:
+        other: Inhaltsverzeichnis
+
+    relatedContent:
+        other: Verwandte Inhalte
+
+    lastUpdatedOn:
+        other: Zuletzt aktualisiert am
+
+    readingTime:
+        one: "{{ .Count }} Minute Lesezeit"
+        other: "{{ .Count }} Minuten Lesezeit"
+
+notFound:
+    title:
+        other: Seite nicht gefunden
+
+    subtitle:
+        other: Diese Seite existiert nicht
+
+widget:
+    archives:
+        title:
+            other: Archiv
+
+        more:
+            other: Weitere
+
+    tagCloud:
+        title:
+            other: Schlagwörter
+
+    categoriesCloud:
+        title:
+            other: Kategorien
+
+search:
+    title:
+        other: Suche
+
+    placeholder:
+        other: Etwas tippen...
+
+    resultTitle:
+        other: "#PAGES_COUNT Seiten (#TIME_SECONDS Sekunden)"
+
+footer:
+    builtWith:
+        other: Copyright © 2019-2023 <a href="https://kirklin.cn" target="_blank" rel="noopener">Kirk Lin</a> All Rights Reserved. <a href="https://kirklin.cn" target="_blank" rel="noopener">Kirk Lin</a> 版权所有
+
+    designedBy:
+        other: <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">闽ICP备2021016459号-1</a>
+
