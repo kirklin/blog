@@ -38,7 +38,8 @@ categories: [ "技术故事", "开源故事", "Vue3" ]
 ![image_pr_solution](assets/pr_solution.png)
 
 ## 更好的解决方案
-大约一个小时后，尤雨溪给了一个更好的解决方案： 在`rollup.config.js`中对`__DEV__: (process.env.NODE_ENV !== 'production')`进行修改为`__DEV__: !!(process.env.NODE_ENV !== 'production')`，这是一个小但重要的修改。添加双重感叹号（`!!`）确保`__DEV__`标志始终是布尔值（`true`或`false`）。这个修改有助于保持一致性，避免与`__DEV__`标志的真值性相关的任何潜在问题。
+大约一个小时后，尤雨溪给了一个更好的解决方案： 在`rollup.config.js`中对`__DEV__: (process.env.NODE_ENV !== 'production')`进行修改为`__DEV__: !!(process.env.NODE_ENV !== 'production')`，这是一个小但重要的修改。
+添加双重感叹号（`!!`）确保`__DEV__`标志始终是布尔值（`true`或`false`）。这个改动不会对原本打包后的代码产生影响，但有助于保持一致性，即使在分号自动插入机制可能导致问题的情况下，也能确保在构建过程中该标志的值始终正确设置。
 
 ![image_yyx_better_solution](assets/yyx_better_solution.png)
 
