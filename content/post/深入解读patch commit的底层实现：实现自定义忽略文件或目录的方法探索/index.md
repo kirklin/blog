@@ -2,7 +2,7 @@
 title: 深入解读pnpm patch packages的底层实现：实现自定义忽略文件或目录的方法探索
 description: 在本文中，我们将深入讨论pnpm的patch-package功能，并探讨如何实现自定义忽略文件或目录的方法。
 date: 2023-06-14
-image: intro.jpg
+image: intro.png
 categories: [ "前端", "pnpm"]
 tags: [ "前端", "pnpm", "patch-package", "patch commit", "git", "diff"] 
 ---
