@@ -1,4 +1,5 @@
 {{- with .Site.Params.comments.giscus -}}
+<div class="giscus-container">
 <script
     src="https://giscus.app/client.js"
     data-repo="{{- .repo -}}"
@@ -16,6 +17,17 @@
     crossorigin="anonymous"
     async
 ></script>
+</div>
+
+<style>
+    .giscus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
 <script>
     function setGiscusTheme(theme) {
         let giscus = document.querySelector("iframe.giscus-frame");
