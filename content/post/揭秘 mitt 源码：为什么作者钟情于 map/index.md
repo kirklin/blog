@@ -1,6 +1,6 @@
 ---
 title: 揭秘 "mitt" 源码：为什么作者钟情于`map`而放弃 `forEach`
-description:
+description: "探索开源库mitt源码中的小细节，揭示了为何作者选择使用map而非forEach，原来是为了在gzip压缩时减少3字节体积，这个小故事展示了前端开发中体积优化的精益求精。"
 date: 2024-01-24
 image: banner.png
 categories: [ "前端", "技术故事", "开源故事"]

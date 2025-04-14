@@ -1,10 +1,9 @@
 ---
 title: 不推荐使用@Autowired进行Field注入的原因
-description: 
+description: "本文详细分析了在Spring中使用@Autowired注解进行Field注入的缺点，包括无法使用final修饰、违反单一职责原则、隐藏依赖关系以及与容器耦合等问题，并推荐使用构造器注入和Setter注入作为替代方案。"
 date: 2022-09-07
 image: banner.jpg
-categories: [ "后端","Spring" ]
-
+categories: [ "Java", "依赖注入", "Spring", "设计模式" ]
 ---
 
 今天写Spring项目的时候发现，在@Autowired上出现了一个警告
