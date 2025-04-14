@@ -1,23 +1,13 @@
-{{- $ThemeVersion := "3.12.0" -}}
+{{- $ThemeVersion := "3.30.0" -}}
 <footer class="site-footer">
     <section class="copyright">
-        &copy; 
-        {{ if and (.Site.Params.footer.since) (ne .Site.Params.footer.since (int (now.Format "2006"))) }}
-            {{ .Site.Params.footer.since }} - 
-        {{ end }}
-        {{ now.Format "2006" }} {{ .Site.Title }}
+        Copyright © 2019-{{ now.Format "2025" }} <a href="https://kirklin.cn" target="_blank" rel="noopener">Kirk Lin</a> All Rights Reserved.
     </section>
     
     <section class="powerby">
         {{ with .Site.Params.footer.customText }}
             {{ . | safeHTML }} <br/>
         {{ end }}
-
-        {{- $Generator := `` -}}
-        {{- $Theme := printf `<b>Copyright © 2019-2023 <a href="https://kirklin.cn" target="_blank" rel="noopener">Kirk Lin</a>. All Rights Reserved. <a href="https://kirklin.cn" target="_blank" rel="noopener">Kirk Lin</a> 版权所有</b>` -}}
-        {{- $DesignedBy := `<a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>` -}}
-
-        {{ T "footer.builtWith" (dict "Generator" $Generator) | safeHTML }} <br />
-        {{ T "footer.designedBy" (dict "Theme" $Theme "DesignedBy" $DesignedBy) | safeHTML }}
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">闽ICP备2021016459号-1</a>
     </section>
 </footer>

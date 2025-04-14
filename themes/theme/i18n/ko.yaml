@@ -47,6 +47,10 @@ widget:
         more:
             other: 더보기
             
+    categoriesCloud:
+        title:
+            other: 카테고리
+            
     tagCloud:
         title:
             other: 태그
@@ -63,8 +67,6 @@ search:
 
 footer:
     builtWith:
-        other: Copyright © 2019-2023 <a href="https://kirklin.cn" target="_blank" rel="noopener">Kirk Lin</a> All Rights Reserved. <a href="https://kirklin.cn" target="_blank" rel="noopener">Kirk Lin</a> 版权所有
-
+        other: "{{ .Generator }}로 만듦"
     designedBy:
-        other: <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">闽ICP备2021016459号-1</a>
-
+        other: "{{ .DesignedBy }}의 {{ .Theme }} 테마 사용 중"

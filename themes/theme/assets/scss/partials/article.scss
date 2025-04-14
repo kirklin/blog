@@ -54,6 +54,7 @@
 }
 
 .article-title {
+    font-family: var(--article-font-family);
     font-weight: 600;
     margin: 0;
     color: var(--card-text-color-main);
@@ -92,16 +93,15 @@
 .article-time,
 .article-translations {
     display: flex;
-    align-items: center;
     color: var(--card-text-color-tertiary);
     gap: 15px;
-    flex-wrap: wrap;
 
     svg {
         vertical-align: middle;
         width: 20px;
         height: 20px;
         stroke-width: 1.33;
+        flex-shrink: 0;
     }
 
     time,
@@ -117,10 +117,21 @@
     }
 }
 
+.article-time {
+    flex-wrap: wrap;
+}
+
+.article-translations {
+    & > div {
+        flex-wrap: wrap;
+    }
+}
+
 .article-category,
 .article-tags {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 
     a {
         color: var(--accent-color-text);

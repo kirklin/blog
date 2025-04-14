@@ -1,24 +1,8 @@
 baseurl: https://kirklin.cn/
 languageCode: zh-cn
 theme: theme
-paginate: 5
 title: Kirk Lin的个人博客
-
-languages:
-    en:
-        languageName: English
-        title: Kirk Lin's blog
-        weight: 1
-    zh-cn:
-        languageName: 简体中文
-        title: Kirk Lin的个人博客
-        weight: 2
-
-# Change it to your Disqus shortname before using
-disqusShortname: Kirk Lin's blog
-
-# GA Tracking ID
-googleAnalytics:
+copyright: Kirk Lin
 
 # Theme i18n support
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
@@ -26,7 +10,34 @@ DefaultContentLanguage: zh-cn
 
 # Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
 # This will make .Summary and .WordCount behave correctly for CJK languages.
-hasCJKLanguage: false
+hasCJKLanguage: true
+
+languages:
+    en:
+        languageName: English
+        title: Kirk Lin's blog
+        weight: 1
+        params:
+            sidebar:
+                subtitle: Do what you love to the extreme.
+    zh-cn:
+        languageName: 中文
+        title: Kirk Lin的个人博客
+        weight: 2
+        params:
+            sidebar:
+                subtitle: 热爱的事要做到极致。
+
+services:
+    # Change it to your Disqus shortname before using
+    disqus:
+        shortname: "theme"
+    # GA Tracking ID
+    googleAnalytics:
+        id: G-1T1V4P461Z
+
+pagination:
+    pagerSize: 3
 
 permalinks:
     post: /p/:slug/
@@ -37,10 +48,10 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon:
+    favicon: # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
 
     footer:
-        since:
+        since: 2019
         customText:
 
     dateFormat:
@@ -64,7 +75,7 @@ params:
             default: Licensed under CC BY-NC-ND 4.0
 
     comments:
-        enabled: false
+        enabled: true
         provider: disqus
 
         disqusjs:
@@ -78,6 +89,12 @@ params:
             repo:
             issueTerm: pathname
             label:
+
+        beaudar:
+            repo:
+            issueTerm: pathname
+            label:
+            theme:
 
         remark42:
             host:
@@ -136,6 +153,7 @@ params:
             repo:
             clientID:
             clientSecret:
+            proxy:
 
         cusdis:
             host:
@@ -158,7 +176,7 @@ params:
     opengraph:
         twitter:
             # Your Twitter username
-            site:
+            site: lkirkun
 
             # Available values: summary, summary_large_image
             card: summary_large_image
@@ -183,7 +201,7 @@ params:
             enabled: true
 
 ### Custom menu
-### See https://docs.stack.jimmycai.com/configuration/custom-menu.html
+### See https://stack.jimmycai.com/config/menu
 ### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
 menu:
     main: []
@@ -195,7 +213,11 @@ menu:
           params:
               icon: brand-github
 
-
+        - identifier: twitter
+          name: Twitter
+          url: https://x.com/lkirkun
+          params:
+              icon: brand-twitter
 
 related:
     includeNewer: true
@@ -210,9 +232,21 @@ related:
 
 markup:
     goldmark:
+        extensions:
+            passthrough:
+                enable: true
+                delimiters:
+                    block:
+                        - - \[
+                          - \]
+                        - - $$
+                          - $$
+                    inline:
+                        - - \(
+                          - \)
         renderer:
             ## Set to true if you have HTML content inside Markdown
-            unsafe: false
+            unsafe: true
     tableOfContents:
         endLevel: 4
         ordered: true

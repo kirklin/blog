@@ -2,9 +2,10 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 
 {{- $description := partialCached "data/description" . .RelPermalink -}}
-<meta name='description' content='{{ $description }}'>
+<meta name='description' {{ printf "content=%q" $description | safeHTMLAttr }}>
+{{ with .Params.Keywords }}<meta name="keywords" content="{{ delimit . ", " }}">{{ end }}
 
-{{- $title := partialCached "data/title" . .RelPermalink -}}
+{{- $title := partial "data/title" . -}}
 <title>{{ $title }}</title>
 
 <link rel='canonical' href='{{ .Permalink }}'>
@@ -18,7 +19,7 @@
 {{- end -}}
 
 {{ with .Site.Params.favicon }}
-    <link rel="shortcut icon" href="{{ . }}" />
+    <link rel="shortcut icon" href="{{ . | relURL }}" />
 {{ end }}
 
 {{- template "_internal/google_analytics.html" . -}}

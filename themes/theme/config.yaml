@@ -25,9 +25,10 @@ params:
         avatar:
             enabled: true
             local: true
-            src: img/avatar.png
+            src: img/avatar.jpeg
 
     article:
+        headingAnchor: false
         math: false
         toc: true
         readingTime: true
@@ -51,6 +52,12 @@ params:
             issueTerm: pathname
             label:
 
+        beaudar:
+            repo:
+            issueTerm: pathname
+            label:
+            theme:        
+
         remark42:
             host:
             site:
@@ -64,7 +71,7 @@ params:
             clientSecret:
             autoCreateIssue: false
 
-        # Waline client configuration see: https://waline.js.org/en/reference/client.html
+        # Waline client configuration see: https://waline.js.org/en/reference/client/props.html
         waline:
             serverURL:
             lang:
@@ -73,12 +80,11 @@ params:
             emoji:
                 - https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo
             requiredMeta:
-                - name
-                - email
-                - url
-            placeholder:
+                - nick
+                - mail
             locale:
                 admin: Admin
+                placeholder:
 
         twikoo:
             envId:
@@ -92,10 +98,12 @@ params:
             category:
             categoryID:
             mapping:
+            strict:
             lightTheme:
             darkTheme:
             reactionsEnabled: 1
             emitMetadata: 0
+            inputPosition:
             lang:
 
         gitalk:

@@ -33,6 +33,10 @@
             margin: var(--card-padding) 0;
             color: var(--card-text-color-main);
 
+            .footnotes {
+                font-family: var(--base-font-family);
+            }
+
             img {
                 max-width: 100%;
                 height: auto;
@@ -63,7 +67,6 @@
             }
 
             .article-tags {
-                flex-wrap: wrap;
                 text-transform: unset;
             }
 
@@ -218,6 +221,28 @@
         margin-inline-start: calc((var(--card-padding)) * -1);
         padding-inline-start: calc(var(--card-padding) - var(--heading-border-size));
         border-inline-start: var(--heading-border-size) solid var(--accent-color);
+        position: relative;
+
+        a.header-anchor {
+            transition: opacity 0.3s ease;
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            width: var(--card-padding);
+            text-align: center;
+            color: var(--accent-color);
+
+            &:before {
+                content: "#";
+            }
+        }
+
+        &:hover,
+        &:focus {
+            a.header-anchor {
+                opacity: 1;
+            }
+        }
     }
 
     figure {
@@ -262,6 +287,11 @@
         padding: 2px 4px;
         border-radius: var(--tag-border-radius);
         font-family: var(--code-font-family);
+    }
+
+    a,
+    code {
+        word-break: break-word;
     }
 
     .gallery {
@@ -411,5 +441,21 @@
         margin-left: calc((var(--card-padding)) * -1);
         margin-right: calc((var(--card-padding)) * -1);
         width: calc(100% + var(--card-padding) * 2);
+    }
+
+    /// Make long KaTeX equations scrollable in the x-axis
+    .katex-display > .katex {
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    kbd {
+        border: 1px solid var(--kbd-border-color);
+        font-weight: bold;
+        font-size: 0.9em;
+        line-height: 1;
+        padding: 2px 4px;
+        border-radius: 4px;
+        display: inline-block;
     }
 }

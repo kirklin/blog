@@ -2,19 +2,19 @@
     publish = "public"
 
 [build.environment]
-    HUGO_VERSION = "0.100.2"
+    HUGO_VERSION = "0.124.0"
     HUGO_THEME = "repo"
 
 [context.production]
-    command = 'hugo --theme=theme --baseUrl="https://kirklin.netlify.app/"'
+    command = "hugo --theme=theme -b ${URL}"
     [context.production.environment]
         HUGO_ENV = "production"
 
 [context.branch-deploy]
-    command = 'hugo --theme=theme --baseUrl="https://kirklin.netlify.app/"'
+    command = "hugo --theme=theme -b ${DEPLOY_PRIME_URL}"
 
 [context.deploy-preview]
-    command = 'hugo --theme=theme --baseUrl="https://kirklin.netlify.app/"'
+    command = "hugo --theme=theme -b ${DEPLOY_PRIME_URL}"
 
 [[plugins]]
     package = "netlify-plugin-hugo-cache-resources"

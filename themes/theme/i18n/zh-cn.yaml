@@ -4,6 +4,13 @@ toggleMenu:
 darkMode:
     other: 暗色模式
 
+list:
+    page: "{{ .Count }} 个页面"
+
+    section: 章节
+
+    subsection: 子章节
+
 article:
     back:
         other: 返回
@@ -54,9 +61,7 @@ search:
 
 footer:
     builtWith:
-        other: Copyright © 2019-2023 <a href="https://kirklin.cn" target="_blank" rel="noopener">Kirk Lin</a> All Rights Reserved. <a href="https://kirklin.cn" target="_blank" rel="noopener">Kirk Lin</a> 版权所有
+        other: 使用 {{ .Generator }} 构建
 
     designedBy:
-        other: <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">闽ICP备2021016459号-1</a>
-
-        
+        other: 主题 {{ .Theme }} 由 {{ .DesignedBy }} 设计
