@@ -102,7 +102,7 @@ Homebrew 是 macOS 的包管理器，用于安装和管理各种软件。
 
 - **安装 Casks (GUI 应用)**:
 
-  - 下面是你提供的 Cask 列表，包含了常用的开发、效率和日常应用。
+  - 下面的 Cask 列表，包含了常用的开发、效率和日常应用。
     - `adobe-creative-cloud`: Adobe 创意云套件
     - `adobe-creative-cloud-cleaner-tool`: Adobe 清理工具
     - `adrive`: 阿里云盘
@@ -140,6 +140,7 @@ Homebrew 是 macOS 的包管理器，用于安装和管理各种软件。
     - `webstorm`: 前端 IDE
     - `wechatwebdevtools`: 微信开发者工具
     - `wireshark`: 网络协议分析器
+
   - **安装命令 (确保代理已开启)**:
 
   ```bash
@@ -188,7 +189,7 @@ Homebrew 是 macOS 的包管理器，用于安装和管理各种软件。
   ```
 
 - **安装 Formulae (命令行工具)**:
-  - 以下是你原始列表中的 CLI 工具，也移除了内部注释。
+  - 以下是常用的命令行工具
     - `autojump`: 快速目录跳转工具
     - `bat`: `cat` 的替代品，带语法高亮和 Git 集成
     - `diff-so-fancy`: 增强 `git diff` 输出的可读性
@@ -205,7 +206,7 @@ Homebrew 是 macOS 的包管理器，用于安装和管理各种软件。
     - `tldr`: 社区驱动的简化 man pages
     - `tree`: 显示目录树结构
     - `wget`: 网络下载工具
-    - `yarn`: Node 包管理器
+
   - **安装命令 (确保代理已开启)**:
   ```bash
   brew install \
